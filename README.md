@@ -2,21 +2,7 @@
 
 Analisador léxico, sintático e semântico desenvolvido para estudo dos princípios de construção de compiladores. O projeto lê um código-fonte, identifica tokens, valida a estrutura conforme a gramática definida e realiza verificações semânticas básicas.
 
-## 📌 Índice
-
-- [Descrição](#-descrição)
-- [Objetivo](#-objetivo)
-- [Funcionalidades](#-funcionalidades)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Pré-requisitos](#-pré-requisitos)
-- [Como Compilar](#-como-compilar)
-- [Como Executar](#-como-executar)
-- [Testes](#testes)
-- [Limitações](#limitações)
-- [Contribuições](#contribuições)
-- [Licença](#licença)
-
-## 📝 Descrição
+## Descrição
 
 Este projeto implementa as três primeiras etapas clássicas de um compilador:
 
@@ -26,7 +12,7 @@ Este projeto implementa as três primeiras etapas clássicas de um compilador:
 
 O repositório também contém exemplos de entrada e imagens das árvores sintáticas geradas.
 
-## 🎯 Objetivo
+## Objetivo
 
 Servir como base para estudos sobre construção de compiladores, incluindo:
 
@@ -47,11 +33,17 @@ Servir como base para estudos sobre construção de compiladores, incluindo:
 ## 📁 Estrutura do Projeto
 /
 ├── analisadorLexico.l # Regras do analisador léxico
+
 ├── analisadorSintatico.y # Gramática e análise sintática/semântica
+
 ├── nodes.h # Estruturas dos nós utilizados nas árvores
+
 ├── Makefile # Automação de compilação
+
 ├── imagens-das-arvores/ # Diagramas/prints das árvores geradas
+
 └── programas-de-teste/ # Arquivos para testar o compilador
+
 ## 🔧 Pré-requisitos
 
 Antes de compilar, instale:
@@ -61,28 +53,6 @@ Antes de compilar, instale:
 - `bison` / `yacc`
 - `make`
 
-No Linux (Ubuntu/Mint), por exemplo:
-
-```bash
-sudo apt install flex bison build-essential make
-
- Usando o Makefile (recomendado)
-bash
-make
-Isso irá gerar o executável:
-
-```bash
-./compilador
 
 
-🔹 Compilando manualmente
-```bash
-lex analisadorLexico.l
-yacc -d analisadorSintatico.y
-gcc lex.yy.c y.tab.c -o compilador
 
-▶️ Como Executar
-Depois de compilar:
-
-```bash
-./compilador <arquivo>
