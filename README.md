@@ -31,7 +31,6 @@ Servir como base para estudos sobre construção de compiladores, incluindo:
 ✔️ Geração automatizada via Makefile  
 
 ## 📁 Estrutura do Projeto
-/
 ├── analisadorLexico.l # Regras do analisador léxico
 
 ├── analisadorSintatico.y # Gramática e análise sintática/semântica
