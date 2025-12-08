@@ -31,17 +31,17 @@ Servir como base para estudos sobre construção de compiladores, incluindo:
 ✔️ Geração automatizada via Makefile  
 
 ## 📁 Estrutura do Projeto
-├── analisadorLexico.l # Regras do analisador léxico
+├── analisadorLexico.l 
 
-├── analisadorSintatico.y # Gramática e análise sintática/semântica
+├── analisadorSintatico.y 
 
-├── nodes.h # Estruturas dos nós utilizados nas árvores
+├── nodes.h 
 
-├── Makefile # Automação de compilação
+├── Makefile 
 
-├── imagens-das-arvores/ # Diagramas/prints das árvores geradas
+├── imagens-das-arvores
 
-└── programas-de-teste/ # Arquivos para testar o compilador
+└── programas-de-teste
 
 ## 🔧 Pré-requisitos
 
