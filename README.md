@@ -71,15 +71,18 @@ bash
 make
 Isso irá gerar o executável:
 
-bash
+```bash
 ./compilador
+
+
 🔹 Compilando manualmente
-bash
+```bash
 lex analisadorLexico.l
 yacc -d analisadorSintatico.y
 gcc lex.yy.c y.tab.c -o compilador
+
 ▶️ Como Executar
 Depois de compilar:
 
-bash
+```bash
 ./compilador <arquivo>
